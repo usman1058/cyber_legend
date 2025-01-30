@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- WOW.js Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* .accordion-item {
+            border: none;
+        } */
+        .custom-container {
+            max-width: 1000px;
+            border: solid 1px #F6F6F6;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 25px rgba(200, 200, 200, 0.5);
+        }
+        .section-title {
+            max-width: 900px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 53px;
+            color: #002E5B;
+        }
+        .text-h2 {
+            font-family: "Poppins", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+        .accordion-button {
+            border: none; 
+            outline: none; 
+            box-shadow: none;
+        }
+        .hp {
+            font-family: "Poppins", Sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1.1px;
+            color: #fff; 
+            margin: 1%;
+          }
+        .pp {
+            font-family: "Poppins", Sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+  
+
+        .accordion-header .accordion-button {
+    background-color: black;
+    display: flex; /* Use flexbox for row alignment */
+    align-items: center; /* Vertically align text and icon */
+    justify-content: space-between; /* Add space between the text and the arrow */
+    padding: 10px 15px; 
+}
+
+.accordion-header .accordion-button::after {
+    filter: brightness(0) invert(1); /* This will make the arrow white */
+}
+
+.accordion-header .accordion-button.collapsed::after {
+    filter: brightness(0) invert(1); /* Ensure the collapsed arrow is also white */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-ul">
+        <nav class="container-fluid">
+            <div class=" text-center ">
+                <img id="logo" class="logo col-md-12 " src="Image/Cyber Legends.png" alt="Cyber Legends Logo" />
+            </div>
+            <div class=" d-flex justify-content-center">
+                <ul id="menu" class="list-unstyled">
+                    <li class="slow-underline mt-2 py-3"><a href="index.html">HOME</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">ABOUT US</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contactUs.html">Contact us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="faQ.html">FAQs</a></li>
+                            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                            <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3"><a href="/services.html">SERVICES</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">SOLUTIONS</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="cyber-solution.html">Cyber Security</a></li>
+                            <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                            <li><a href="marketing-solutions.html">Marketing</a></li>
+                            <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                            <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                            <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                            <li><a href="web-solutions.html">Web Development</a></li>
+                            <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap">
+                        <a href="">TRAININGS</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="cyber-security.html">Cyber Security</a></li>
+                            <li><a href="AI.html">AI & Data Science</a></li>
+                            <li><a href="development.html">Development</a></li>
+                            <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                            <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                            <li><a href="blockchain.html">BlockChain</a></li>
+                            <li><a href="art-designing.html">Art & Design</a></li>
+                            <li><a href="marketing.html">Marketing</a></li>
+                            <li><a href="business-accounts.html">Business & Accounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3"><a href="blog.html">Blog</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="blog.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <div class=" d-flex nav-btn">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button class="btn contact-us e-btn  "><span>Enroll Now</span></button></a>
+                    <a href=""><button class="btn d-btn contact-us "><span>Book for Demo</span></button> </a>
+                </div>
+                <div class="nav1">
+                    <button id="menuButton" class="menu-button"> ☰</button>
+
+                    <!-- Menu Container -->
+                    <div id="menu1" class="menu1">
+                        <ul>
+                            <li class="slow-underline"><a href="index.html">HOME</a></li>
+                            <li class="slow-underline text-nowrap"><a href="">ABOUT US</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contactUs.html">Contact us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="faQ.html">FAQs</a></li>
+                                    <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline"><a href="services.html">SERVICES</a></li>
+                            <li class="slow-underline text-nowrap"><a href="">SOLUTIONS</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="cyber-solution.html">Cyber Security</a></li>
+                                    <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                                    <li><a href="marketing-solutions.html">Marketing</a></li>
+                                    <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                                    <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                                    <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                                    <li><a href="web-solutions.html">Web Development</a></li>
+                                    <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline text-nowrap">
+                                <a href="">TRAININGS</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                                    <li><a href="AI.html">AI & Data Science</a></li>
+                                    <li><a href="development.html">Development</a></li>
+                                    <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                                    <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                    <li><a href="blockchain.html">BlockChain</a></li>
+                                    <li><a href="art-designing.html">Art & Design</a></li>
+                                    <li><a href="marketing.html">Marketing</a></li>
+                                    <li><a href="business-accounts.html">Business & Accounts</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline"><a href="blog.html">Blog</a></li>
+                            <li class="slow-underline text-nowrap"><a href="blog.html">Contact Us</a></li>
+                        </ul>
+                        <div class=" d-flex flex-column nav-btn1">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform" class="btn contact-us m-btn"><span>Enroll Now</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- FAQ Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="section-title text-uppercase fw-bold">Frequently Asked Questions</h1>
+            <div class="divider mx-auto mt-3" style="width: 30%; height: 4px; background-color: black;"></div>
+        </div>
+        <div class="container custom-container">
+            <div class="accordion" id="basicAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="basicAccordionCollapseOne">
+                            <p class="hp">What is main idea?</p>
+                        </button>
+                    </h2>
+                    <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#basicAccordion">
+                        <div class="accordion-body text-justify">
+                            <p class="pp">Property owners and tenants can claim and track their property to monitor the estimated value and learn about recent sales for similar properties. By understanding your relationship to the property, we can tailor what we show and send you to make it more relevant to your situation. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="basicAccordionCollapseTwo">
+                            <p class="hp">How many data can I track?</p>
+                        </button>
+                    </h2>
+                    <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#basicAccordion">
+                        <div class="accordion-body text-justify">
+                            <p class="pp">There is no limit to the number of properties you can track. Once you have tracked a property you will be able to track additional properties, make changes to your property relationship and change your primary property.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="basicAccordionCollapseTwo">
+                          <p class="hp">How are estimates calculated?</p>
+                      </button>
+                  </h2>
+                  <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#basicAccordion">
+                      <div class="accordion-body text-justify">
+                          <p class="pp">Price estimates are calculated by PropTrack Australia by looking at multiple properties and local market data points, which together can provide insight into the approximate value of a property. The data that informs the estimate range includes property and local market data including: Property types, Recent sales & local price trends, and Land area. To learn more about privacy and Property Value pages.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basicAccordionCollapseFour" aria-expanded="false" aria-controls="basicAccordionCollapseTwo">
+                        <p class="hp neonText">Who are we?</p>
+                    </button>
+                </h2>
+                <div id="basicAccordionCollapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#basicAccordion">
+                    <div class="accordion-body text-justify">
+                        <p class="pp">The Australian arm of PropTrack was acquired by REA Group In May 2018. A combination of unique data, industry expertise and analytical precision has made PropTrack a trusted leader in property data and automated valuations. From November 2018, PropTrack has been providing REA with most of the property insights used in consumer and customer experiences. More information about PropTrack is available on their website.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basicAccordionCollapseFive" aria-expanded="false" aria-controls="basicAccordionCollapseTwo">
+                      <p class="hp">Why can't I see an estimated value of my project?</p>
+                  </button>
+              </h2>
+              <div id="basicAccordionCollapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#basicAccordion">
+                  <div class="accordion-body text-justify">
+                      <p class="pp">A combination of unique data, industry expertise and analytical precision has made PropTrack a trusted leader in property data and automated valuations. From November 2018, PropTrack has been providing REA with most of the property insights used in consumer and customer experiences. More information about PropTrack is available on their website.</p>
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+         <!-- Footer Section -->
+         <div id="footer-container"></div>
+         <!-- Back to Top -->
+         <!-- <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>    -->
+ 
+         <script>  document.addEventListener('DOMContentLoaded', () => {
+             fetch('footer.html')
+                 .then(response => response.text())
+                 .then(data => {
+                     document.getElementById('footer-container').innerHTML = data;
+                 });
+         });</script>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        const menuButton = document.getElementById('menuButton');
+        const menu = document.getElementById('menu1');
+    
+        // Add an event listener to toggle the menu visibility when the button is clicked
+        menuButton.addEventListener('click', function () {
+            // Toggle the 'display' property of the menu
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                menuButton.classList.remove('menu-btn')
+            } else {
+                menu.style.display = 'block'
+                menuButton.classList.add('menu-btn')
+            }
+        });
+    </script>
+</body>
+</html>

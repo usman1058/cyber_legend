@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <title>Cyber Security Solutions</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="Assets/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="Assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="Assets/style.css" rel="stylesheet">
+        <link href="Assets/style-team.css" rel="stylesheet">
+    <style>
+     .section-title {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+}
+        /* 
+        
+        .job-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+*/
+.job-card {
+    position: relative; 
+    overflow: visible;  /* Allow logo to overflow outside */
+    box-shadow: 0px 0px 15px rgba(56, 152, 226, 0.3);
+    border-radius: 3px;
+}
+
+.logo-container-career {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #BBC1C4;
+    background-color: #F7F8F9;
+    height: 22vh;
+    width: 17vw;
+    justify-content: center;
+    display: flex;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(56, 152, 226, 0.3)
+}/* Shadow effect */
+
+
+
+.job-logo {
+    /* height: 100px; */
+  margin-top: 10%;
+  border-radius: 4px;
+}
+
+
+
+        .job-category {
+            background-color: #28a745;
+            color: #fff;
+            font-size: 0.875rem;
+            padding: 5px 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .job-title {
+            font-size: 1rem;
+           
+            color: #000;
+        }
+        .job-duration {
+            color: green;
+            font-size: 0.875rem;
+        }
+        .job-address,
+        .job-experience {
+            font-size: 1rem;
+            color: #137cd8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-ul">
+        <nav class="container-fluid">
+            <div class=" text-center ">
+                <img id="logo" class="logo col-md-12 " src="Image/Cyber Legends.png" alt="Cyber Legends Logo" />
+            </div>
+            <div class=" d-flex justify-content-center">
+                <ul id="menu" class="list-unstyled">
+                    <li class="slow-underline mt-2 py-3"><a href="index.html">HOME</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">ABOUT US</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contactUs.html">Contact us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="faQ.html">FAQs</a></li>
+                            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                            <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3"><a href="/services.html">SERVICES</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">SOLUTIONS</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="cyber-solution.html">Cyber Security</a></li>
+                            <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                            <li><a href="marketing-solutions.html">Marketing</a></li>
+                            <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                            <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                            <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                            <li><a href="web-solutions.html">Web Development</a></li>
+                            <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap">
+                        <a href="">TRAININGS</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="cyber-security.html">Cyber Security</a></li>
+                            <li><a href="AI.html">AI & Data Science</a></li>
+                            <li><a href="development.html">Development</a></li>
+                            <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                            <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                            <li><a href="blockchain.html">BlockChain</a></li>
+                            <li><a href="art-designing.html">Art & Design</a></li>
+                            <li><a href="marketing.html">Marketing</a></li>
+                            <li><a href="business-accounts.html">Business & Accounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3"><a href="blog.html">Blog</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="blog.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <div class=" d-flex nav-btn">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button class="btn contact-us e-btn  "><span>Enroll Now</span></button></a>
+                    <a href=""><button class="btn d-btn contact-us "><span>Book for Demo</span></button> </a>
+                </div>
+                <div class="nav1">
+                    <button id="menuButton" class="menu-button"> ☰</button>
+
+                    <!-- Menu Container -->
+                    <div id="menu1" class="menu1">
+                        <ul>
+                            <li class="slow-underline"><a href="index.html">HOME</a></li>
+                            <li class="slow-underline text-nowrap"><a href="">ABOUT US</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contactUs.html">Contact us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="faQ.html">FAQs</a></li>
+                                    <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline"><a href="services.html">SERVICES</a></li>
+                            <li class="slow-underline text-nowrap"><a href="">SOLUTIONS</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="cyber-solution.html">Cyber Security</a></li>
+                                    <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                                    <li><a href="marketing-solutions.html">Marketing</a></li>
+                                    <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                                    <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                                    <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                                    <li><a href="web-solutions.html">Web Development</a></li>
+                                    <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline text-nowrap">
+                                <a href="">TRAININGS</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                                    <li><a href="AI.html">AI & Data Science</a></li>
+                                    <li><a href="development.html">Development</a></li>
+                                    <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                                    <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                    <li><a href="blockchain.html">BlockChain</a></li>
+                                    <li><a href="art-designing.html">Art & Design</a></li>
+                                    <li><a href="marketing.html">Marketing</a></li>
+                                    <li><a href="business-accounts.html">Business & Accounts</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline"><a href="blog.html">Blog</a></li>
+                            <li class="slow-underline text-nowrap"><a href="blog.html">Contact Us</a></li>
+                        </ul>
+                        <div class=" d-flex flex-column nav-btn1">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform" class="btn contact-us m-btn"><span>Enroll Now</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+       <div class="container py-5">
+        <!-- Header Section -->
+        <div class="text-center mb-5">
+            <h1 class="section-title text-uppercase fw-bold">Career</h1>
+            <h2 class="mt-3 fw-bold mt-5">Positions Opened</h2>
+            <div class="divider mx-auto mt-3" style="width: 80px; height: 4px; background-color: #007bff;"></div>
+        </div>
+    
+        <!-- Job Card -->
+        <div class="job-card rounded-3 p-4 d-flex flex-column flex-md-row align-items-start align-items-md-center mb-4">
+            <!-- Logo Section -->
+            <div class="logo-container-career me-0 me-md-4 mb-3 mb-md-0 p-2 d-flex justify-content-center align-items-center" >
+                <img src="Image/cyber legends official Logo.png" alt="Logo" class="job-logo img-fluid" style="object-fit: contain;">
+            </div>
+            
+            <!-- Job Details Section -->
+            <div class="flex-grow-1">
+                <a href="https://cyberlegends.org/wp/csection/cyber-security-instructor/" class="text-decoration-none">
+                    <h4 class="job-title text-dark">Cyber Security Instructor
+                        <span class="job-duration fs-6 ">/ 12 months ago</span>
+                    </h4>
+                </a>
+                <p class="job-address text-secondary mb-2">
+                    Cyber Legends, University of Management &amp; Technology Rd, opp. Jamia Masjid Taqwa, Block C1 Block C 1 Phase 1 Johar Town, Lahore, Punjab 54000
+                </p>
+                <p class="job-experience">3 years of experience required</p>
+            </div>
+            <!-- Job Meta Section -->
+            <div class="text-end ms-auto">
+                <span class="job-category badge  py-2 px-3 mb-2">Part Time</span>
+                <div class="job-salary  mb-3">Industry standards salary <span class="text-success">/ Month</span></div>
+                <a href="https://cyberlegends.org/wp/csection/cyber-security-instructor/" class="btn btn-sm" style="color:#BBC1C4;">Browse Job</a>
+            </div>
+        </div>
+    </div>
+  <!-- Footer Section -->
+  <div id="footer-container"></div>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+  <script>  document.addEventListener('DOMContentLoaded', () => {
+      fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('footer-container').innerHTML = data;
+          });
+  });</script>
+  <script>
+
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu1');
+
+    // Add an event listener to toggle the menu visibility when the button is clicked
+    menuButton.addEventListener('click', function () {
+        // Toggle the 'display' property of the menu
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+            menuButton.classList.remove('menu-btn')
+        } else {
+            menu.style.display = 'block'
+            menuButton.classList.add('menu-btn')
+        }
+    });
+</script>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/lib/wow/wow.min.js"></script>
+<script src="Assets/lib/easing/easing.min.js"></script>
+<script src="Assets/lib/waypoints/waypoints.min.js"></script>
+<script src="Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="Assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

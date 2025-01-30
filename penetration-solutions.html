@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Penetration Solutions</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="Assets/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="Assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="Assets/style.css" rel="stylesheet">
+        <link href="Assets/style-team.css" rel="stylesheet">
+        <style>
+            @media (min-width: 1200px) {
+  .display-3 {
+    font-size: 3rem;
+  }
+}
+        .btn-group {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: #002E5B;
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.4s, height 0.4s;
+        }
+
+        .btn:hover:before {
+            width: 400%;
+            height: 400%;
+        }
+        .btn:hover {
+            color: #002E5B;
+        }
+        </style>
+    </head>
+
+    <body>
+    <!-- Header Section -->
+    <div class="header-ul">
+        <nav class="container-fluid">
+            <div class=" text-center ">
+                <img id="logo" class="logo col-md-12 " src="Image/Cyber Legends.png" alt="Cyber Legends Logo" />
+            </div>
+            <div class=" d-flex justify-content-center">
+                <ul id="menu" class="list-unstyled">
+                    <li class="slow-underline mt-2 py-3"><a href="index.html">HOME</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">ABOUT US</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contactUs.html">Contact us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="faQ.html">FAQs</a></li>
+                            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                            <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3"><a href="services.html">SERVICES</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">SOLUTIONS</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="cyber-solution.html">Cyber Security</a></li>
+                            <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                            <li><a href="marketing-solutions.html">Marketing</a></li>
+                            <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                            <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                            <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                            <li><a href="web-solutions.html">Web Development</a></li>
+                            <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap">
+                        <a href="">TRAININGS</a>
+                        <span class="elementskit-submenu-indicator"></span>
+                        <ul class="submenu">
+                            <li><a href="cyber-security.html">Cyber Security</a></li>
+                            <li><a href="AI.html">AI & Data Science</a></li>
+                            <li><a href="development.html">Development</a></li>
+                            <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                            <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                            <li><a href="blockchain.html">BlockChain</a></li>
+                            <li><a href="art-designing.html">Art & Design</a></li>
+                            <li><a href="marketing.html">Marketing</a></li>
+                            <li><a href="business-accounts.html">Business & Accounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="slow-underline mt-2 py-3"><a href="blog.html">Blog</a></li>
+                    <li class="slow-underline mt-2 py-3 text-nowrap"><a href="blog.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <div class=" d-flex nav-btn">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button class=" contact-us e-btn  "><span>Enroll Now</span></button></a>
+                    <a href=""><button class=" d-btn contact-us "><span>Book for Demo</span></button> </a>
+                </div>
+                <div class="nav1">
+                    <button id="menuButton" class="menu-button"> ☰</button>
+
+                    <!-- Menu Container -->
+                    <div id="menu1" class="menu1">
+                        <ul>
+                            <li class="slow-underline"><a href="index.html">HOME</a></li>
+                            <li class="slow-underline text-nowrap"><a href="">ABOUT US</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contactUs.html">Contact us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="faQ.html">FAQs</a></li>
+                                    <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline"><a href="services.html">SERVICES</a></li>
+                            <li class="slow-underline text-nowrap"><a href="">SOLUTIONS</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="cyber-solution.html">Cyber Security</a></li>
+                                    <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                                    <li><a href="marketing-solutions.html">Marketing</a></li>
+                                    <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                                    <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                                    <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                                    <li><a href="web-solutions.html">Web Development</a></li>
+                                    <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline text-nowrap">
+                                <a href="">TRAININGS</a>
+                                <span class="elementskit-submenu-indicator"></span>
+                                <ul class="submenu">
+                                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                                    <li><a href="AI.html">AI & Data Science</a></li>
+                                    <li><a href="development.html">Development</a></li>
+                                    <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                                    <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                    <li><a href="blockchain.html">BlockChain</a></li>
+                                    <li><a href="art-designing.html">Art & Design</a></li>
+                                    <li><a href="marketing.html">Marketing</a></li>
+                                    <li><a href="business-accounts.html">Business & Accounts</a></li>
+                                </ul>
+                            </li>
+                            <li class="slow-underline"><a href="blog.html">Blog</a></li>
+                            <li class="slow-underline text-nowrap"><a href="blog.html">Contact Us</a></li>
+                        </ul>
+                        <div class=" d-flex flex-column nav-btn1">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform" class=" contact-us m-btn"><span>Enroll Now</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+        <!-- Services Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">OUR SOLUTIONS</h4>
+                    </div>
+                    <div class="container py-5">
+                        <!-- First Row: Button Group -->
+                        <div class="btn-group w-100 mb-4">
+                            <a href="cyber-solution.html" class="btn btn-primary m-2">Cyber Security</a>
+
+                            <a href="AI&DS-solutions.html" class="btn btn-secondary m-2">AI & Data Science</a>
+                            <a href="marketing-solutions.html" class="btn btn-success m-2">Marketing</a>
+                            <a href="digital-forensice-solutions.html" class="btn btn-danger m-2">Digital Forensics</a>
+                        </div>
+                
+                        <!-- Second Row: Button Group -->
+                        <div class="btn-group w-100">
+                            <a href="penetration-solutions.html" class="btn btn-warning m-2">Penetration Testing</a>
+                            <a href="business&accounts-solutions.html" class="btn btn-info m-2">Business & Accounts</a>
+                            <a href="web-solutions.html" class="btn btn-warning m-2">Web Development</a>
+                            <a href="ecommerce-solutions.html" class="btn btn-info m-2">Ecommerce</a>
+                        </div>
+                    </div>
+                    <h1 class="display-3 mb-4">PENETRATION TESTING SOLUTIONS</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="Image2/XML External Entity (XXE) Testing.png" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">External Network Testing</h5>
+                                    <p class="mb-4">Assessing the security of an organization’s external-facing network assets, such as firewalls and routers.</p>
+                                    <a href="PenetrationTesting-Module-Solution/ENT.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="Image2/File Inclusion Testing.png" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Internal Network Testing</h5>
+                                    <p class="mb-4">Evaluating the security of internal network components and systems to identify vulnerabilities that could be exploited by insiders.</p>
+                                    <a href="PenetrationTesting-Module-Solution/INT.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="Image2/HTTP Methods Testing.png" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Wireless Network Testing</h5>
+                                    <p class="mb-4">Testing the security of wireless networks to detect vulnerabilities in Wi-Fi and Bluetooth connections.</p>
+                                    <a href="PenetrationTesting-Module-Solution/WNT.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center mt-5">
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="Image2/Security Headers Testing.png" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Static Application Security</h5>
+                                    <p class="mb-4">Analyzing the source code of web applications to identify vulnerabilities without executing the program.</p>
+                                    <a href="PenetrationTesting-Module-Solution/SAS.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="Image2/Session Management Testing.png" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Dynamic Application Security</h5>
+                                    <p class="mb-4">Testing the running web application to discover vulnerabilities in real-time as it processes data.</p>
+                                    <a href="PenetrationTesting-Module-Solution/DAS.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="Image2/Clickjacking Testing.png" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Interactive Application Security</h5>
+                                    <p class="mb-4">Combining elements of both static and dynamic testing to provide a comprehensive assessment during application runtime.</p>
+                                    <a href="PenetrationTesting-Module-Solution/IAS.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Services End -->
+
+
+
+       
+         <!-- Footer Section -->
+         <div id="footer-container"></div>
+         <!-- Back to Top -->
+         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+ 
+         <script>  document.addEventListener('DOMContentLoaded', () => {
+             fetch('footer.html')
+                 .then(response => response.text())
+                 .then(data => {
+                     document.getElementById('footer-container').innerHTML = data;
+                 });
+         });</script>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="Assets/lib/wow/wow.min.js"></script>
+        <script src="Assets/lib/easing/easing.min.js"></script>
+        <script src="Assets/lib/waypoints/waypoints.min.js"></script>
+        <script src="Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="Assets/js/main.js"></script>
+        <script>
+
+            const menuButton = document.getElementById('menuButton');
+            const menu = document.getElementById('menu1');
+        
+            // Add an event listener to toggle the menu visibility when the button is clicked
+            menuButton.addEventListener('click', function () {
+                // Toggle the 'display' property of the menu
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    menuButton.classList.remove('menu-btn')
+                } else {
+                    menu.style.display = 'block'
+                    menuButton.classList.add('menu-btn')
+                }
+            });
+        </script>
+    </body>
+
+</html>

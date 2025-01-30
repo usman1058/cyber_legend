@@ -1,0 +1,177 @@
+body {
+    font-family: "Poppins", Sans-serif;
+}
+
+.navbar-brand {
+    margin-right: auto; /* Moves logo to the left */
+    width: 7%;
+}
+
+.middle-contents {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align the content */
+    flex-grow: 1;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #354180;
+}
+
+.middle-contents a {
+    margin-right: 25px; /* Increased space between the links */
+    text-decoration: none; /* Remove underline */
+}
+
+
+.middle-contents a.active {
+    text-decoration: none; /* Ensure no underline if the link is active */
+}
+
+.right-button {
+    margin-left: auto; /* Moves button to the right */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start with the sidebar hidden */
+    width: 220px; /* Reduced width of the sidebar */
+    height: 100%;
+    background-color: #343a40;
+    overflow-y: auto;
+    transition: 0.3s; /* Smooth transition when opening/closing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for the sidebar */
+}
+
+.sidebar a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Interactive dropdown */
+.sidebar .dropdown {
+    position: relative;
+}
+
+.sidebar .dropdown:hover .dropdown-submenu {
+    display: block; /* Show submenu when parent is hovered */
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown submenu */
+.sidebar .dropdown-submenu {
+    display: none; /* Hide submenus by default */
+    background-color: #002E5B; /* Set background color of submenu */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+    opacity: 0;
+    transform: translateX(-10px);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12); /* Add shadow for depth */
+}
+
+.sidebar .dropdown:hover .dropdown-submenu {
+    opacity: 1;
+    transform: translateX(0); /* Smooth sliding effect */
+}
+
+/* Styling for dropdown items */
+.sidebar .dropdown-submenu a {
+    padding: 10px 14px; /* Reduced padding for smaller items */
+    margin-bottom: 8px; /* Space between items */
+    color: #FFFFFF; /* Text color for dropdown items */
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Adjust font size */
+    font-weight: 400; /* Font weight */
+    background-color: #002E5B; /* Background color of items */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.sidebar .dropdown-submenu a:hover {
+    background-color: #354180; /* Change background color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    color: white; /* Ensure text stays white */
+}
+
+/* Contact Us button */
+.contact-us {
+    background-color: #354180;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us:hover {
+    animation: colorChange 0.5s ease-in-out forwards;
+    color: white;
+    opacity: 1
+}
+.dropdown-item {
+    text-decoration: none;
+  display: block;
+  font-family: "Poppins", Sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px;
+  color: #002E5B;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s, color 0.3s;
+}
+@keyframes colorChange {
+    0% {
+        background-color: #354180; /* Initial color */
+    }
+    100% {
+        background-color: rgb(60, 60, 189); /* New color on hover */
+    }
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #354180; /* Dark purple color */
+    color: white; /* Ensure text stays white */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Media query to hide middle content and display menu button on small screens */
+@media (max-width: 800px) {
+    .middle-contents {
+        display: none; /* Hide middle contents on small screens */
+    }
+    .dropdown-button {
+        display: inline-block;
+        margin: 0 auto; /* Center the dropdown button */
+    }
+    .navbar-nav {
+        display: none; /* Hide the content list on small screens */
+    }
+}
+
+/* Hide the menu button completely on larger screens */
+@media (min-width: 801px) {
+    .dropdown-button {
+        display: none; /* Hide the menu button on larger screens */
+    }
+}
+
+/* Add shadow to navbar */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow under navbar */
+}

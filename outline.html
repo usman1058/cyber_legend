@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Data Science</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- WOW.js Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+            <!-- Libraries Stylesheet -->
+            <link href="Assets/lib/animate/animate.min.css" rel="stylesheet">
+            <link href="Assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+    
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+    
+            <!-- Template Stylesheet -->
+            <link href="Assets/style.css" rel="stylesheet">
+            <link href="Assets/style-team.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .cont {
+      padding: 50px 0 50px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Style the tab */
+    .tab {
+      border: 1px solid #ddd;
+      background-color: #fff;
+      width: 20%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #e2e6ea;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .tab button i {
+      margin-left: 10px;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      background-color: #fff;
+      width: 65%;
+      padding: 30px;
+      border-left: 1px solid #ddd;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion {
+      background-color: #f8f9fa;
+      color: #333;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      margin: 5px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .accordion.active,
+    .accordion:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .panel {
+      display: none;
+      padding: 0 18px;
+      background-color: white;
+      overflow: hidden;
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+    }
+
+    h1 {
+      color: #007bff;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      font-size: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .head h1 {
+      margin-bottom: 40px;
+      font-size: 60px;
+      font-weight: 800;
+      color: #002E5B;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div class="header-ul">
+    <nav class="container-fluid">
+      <div class=" text-center ">
+        <img id="logo" class="logo col-md-12 " src="Image/Cyber Legends.png" alt="Cyber Legends Logo" />
+      </div>
+      <div class=" d-flex justify-content-center">
+        <ul id="menu" class="list-unstyled">
+          <li class="slow-underline mt-2 py-3"><a href="index.html">HOME</a></li>
+          <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">ABOUT US</a>
+            <span class="elementskit-submenu-indicator"></span>
+            <ul class="submenu">
+              <li><a href="events.html">Events</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contactUs.html">Contact us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="faQ.html">FAQs</a></li>
+              <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+              <li><a href="privacy&policy.html">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li class="slow-underline mt-2 py-3"><a href="/services.html">SERVICES</a></li>
+          <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">SOLUTIONS</a>
+            <span class="elementskit-submenu-indicator"></span>
+            <ul class="submenu">
+              <li><a href="cyber-solution.html">Cyber Security</a></li>
+              <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+              <li><a href="marketing-solutions.html">Marketing</a></li>
+              <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+              <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+              <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+              <li><a href="web-solutions.html">Web Development</a></li>
+              <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+            </ul>
+          </li>
+          <li class="slow-underline mt-2 py-3 text-nowrap">
+            <a href="">TRAININGS</a>
+            <span class="elementskit-submenu-indicator"></span>
+            <ul class="submenu">
+              <li><a href="cyber-security.html">Cyber Security</a></li>
+              <li><a href="AI.html">AI & Data Science</a></li>
+              <li><a href="development.html">Development</a></li>
+              <li><a href="digital-forensics.html">Digital Forensics</a></li>
+              <li><a href="penetration-testing.html">Penetration Testing</a></li>
+              <li><a href="blockchain.html">BlockChain</a></li>
+              <li><a href="art-designing.html">Art & Design</a></li>
+              <li><a href="marketing.html">Marketing</a></li>
+              <li><a href="business-accounts.html">Business & Accounts</a></li>
+            </ul>
+          </li>
+          <li class="slow-underline mt-2 py-3"><a href="blog.html">Blog</a></li>
+          <li class="slow-underline mt-2 py-3 text-nowrap"><a href="blog.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex">
+        <div class=" d-flex nav-btn">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button class="btn contact-us e-btn  "><span>Enroll Now</span></button></a>
+          <a href=""><button class="btn d-btn contact-us "><span>Book for Demo</span></button> </a>
+        </div>
+        <div class="nav1">
+          <button id="menuButton" class="menu-button"> ☰</button>
+
+          <!-- Menu Container -->
+          <div id="menu1" class="menu1">
+            <ul>
+              <li class="slow-underline"><a href="index.html">HOME</a></li>
+              <li class="slow-underline text-nowrap"><a href="">ABOUT US</a>
+                <span class="elementskit-submenu-indicator"></span>
+                <ul class="submenu">
+                  <li><a href="events.html">Events</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="contactUs.html">Contact us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="faQ.html">FAQs</a></li>
+                  <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                  <li><a href="privacy&policy.html">Privacy Policy</a></li>
+                </ul>
+              </li>
+              <li class="slow-underline"><a href="services.html">SERVICES</a></li>
+              <li class="slow-underline text-nowrap"><a href="">SOLUTIONS</a>
+                <span class="elementskit-submenu-indicator"></span>
+                <ul class="submenu">
+                  <li><a href="cyber-solution.html">Cyber Security</a></li>
+                  <li><a href="AI&DS-solutions.html">AI & Data Science</a></li>
+                  <li><a href="marketing-solutions.html">Marketing</a></li>
+                  <li><a href="digital-forensice-solutions.html">Digital Forensics</a></li>
+                  <li><a href="penetration-solutions.html">Penetration Testing</a></li>
+                  <li><a href="business&accounts-solutions.html">Business & Accounts</a></li>
+                  <li><a href="web-solutions.html">Web Development</a></li>
+                  <li><a href="ecommerce-solutions.html">Ecommerce</a></li>
+                </ul>
+              </li>
+              <li class="slow-underline text-nowrap">
+                <a href="">TRAININGS</a>
+                <span class="elementskit-submenu-indicator"></span>
+                <ul class="submenu">
+                  <li><a href="cyber-security.html">Cyber Security</a></li>
+                  <li><a href="AI.html">AI & Data Science</a></li>
+                  <li><a href="development.html">Development</a></li>
+                  <li><a href="digital-forensics.html">Digital Forensics</a></li>
+                  <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                  <li><a href="blockchain.html">BlockChain</a></li>
+                  <li><a href="art-designing.html">Art & Design</a></li>
+                  <li><a href="marketing.html">Marketing</a></li>
+                  <li><a href="business-accounts.html">Business & Accounts</a></li>
+                </ul>
+              </li>
+              <li class="slow-underline"><a href="blog.html">Blog</a></li>
+              <li class="slow-underline text-nowrap"><a href="blog.html">Contact Us</a></li>
+            </ul>
+            <div class=" d-flex flex-column nav-btn1">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform" class="btn contact-us m-btn"><span>Enroll Now</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+
+
+
+  <div class=" head text-center mt-5 ">
+
+    <h1>PROGRAM INFO</h1>
+
+
+  </div>
+
+
+
+  <div class="cont">
+
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'O1')" id="defaultOpen">Course Detail</button>
+      <button class="tablinks" onclick="openCity(event, 'O2')">Course Duration</button>
+      <button class="tablinks" onclick="openCity(event, 'O3')"> Course Outline</button>
+      <button class="tablinks" onclick="openCity(event, 'O4')"> Course Instructure</button>
+      <button class="tablinks" onclick="openCity(event, 'O5')"> Course Fee</button>
+    </div>
+    <div id="O1" class="tabcontent">
+
+      <h1>Cyber Security Course Details</h1>
+      <p>
+        The Cyber Security course is designed to provide you with the knowledge and skills to protect information and
+        networks from cyber threats. This course covers a range of essential topics, from basic security principles to
+        advanced techniques for safeguarding your organization's digital assets.
+      </p>
+      <h3>Course Overview</h3>
+      <p>
+        In today's digital world, cyber security is more important than ever. This course equips students with the tools
+        to safeguard information, detect threats, and respond to incidents efficiently. It includes hands-on labs,
+        real-world examples, and a deep dive into security technologies such as firewalls, encryption, and intrusion
+        detection systems (IDS).
+      </p>
+      <h3>Learning Objectives</h3>
+      <ul>
+        <li>Understand fundamental concepts of Cyber Security, including threat models and risk management.</li>
+        <li>Learn how to protect your network infrastructure from external and internal attacks.</li>
+        <li>Explore techniques for securing applications, systems, and data from security breaches.</li>
+        <li>Gain practical skills in using cyber security tools such as penetration testing, firewalls, and encryption.
+        </li>
+        <li>Learn about ethical hacking and the importance of securing your organization's digital assets.</li>
+      </ul>
+      <h3>Course Outline</h3>
+      <ul>
+        <li><strong>Module 1:</strong> Introduction to Cyber Security
+          <ul>
+            <li>Cyber Threats and Attacks</li>
+            <li>Cyber Security Basics</li>
+            <li>Cyber Laws and Ethics</li>
+          </ul>
+        </li>
+        <li><strong>Module 2:</strong> Network Security
+          <ul>
+            <li>Firewalls and Network Monitoring</li>
+            <li>Virtual Private Networks (VPNs)</li>
+            <li>Intrusion Detection and Prevention Systems (IDS/IPS)</li>
+          </ul>
+        </li>
+        <li><strong>Module 3:</strong> Cryptography and Encryption
+          <ul>
+            <li>Basic Cryptography Concepts</li>
+            <li>Symmetric vs Asymmetric Encryption</li>
+            <li>Encryption Tools and Techniques</li>
+          </ul>
+        </li>
+        <li><strong>Module 4:</strong> Ethical Hacking and Penetration Testing
+          <ul>
+            <li>Penetration Testing Methods</li>
+            <li>Vulnerability Assessment</li>
+            <li>Tools and Techniques for Ethical Hacking</li>
+          </ul>
+        </li>
+        <li><strong>Module 5:</strong> Security Management
+          <ul>
+            <li>Risk Management and Mitigation</li>
+            <li>Incident Response and Recovery</li>
+            <li>Building a Security Plan for Your Organization</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Who Should Take This Course?</h3>
+      <p>
+        This course is ideal for professionals working in IT or network administration, as well as those looking to
+        start a career in Cyber Security. It is suitable for:
+      </p>
+      <ul>
+        <li>Network and System Administrators</li>
+        <li>IT Security Analysts</li>
+        <li>Anyone interested in ethical hacking and penetration testing</li>
+        <li>Security professionals looking to upgrade their skills</li>
+      </ul>
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>Basic understanding of computer networks and operating systems (Windows/Linux).</li>
+        <li>Familiarity with common IT terminology.</li>
+        <li>No prior cyber security experience is required, although it may be beneficial.</li>
+      </ul>
+    </div>
+
+    <div id="O3" class="tabcontent">
+
+      <h1>Outline</h1>
+
+      <button class="accordion">Q:1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Q:2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Q:3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+      <button class="accordion">Q:1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Q:2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Q:3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+      <button class="accordion">Q:1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Q:2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Q:3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+    </div>
+
+
+    <div id="O2" class="tabcontent">
+      <h1>Course Duration</h1>
+
+      <p>The Cyber Security course is designed to provide students with a comprehensive understanding of both the
+        theoretical and practical aspects of securing computer systems and networks. The duration of the course is
+        structured to ensure that each student is given the right amount of time to grasp complex topics while also
+        offering flexibility for those with busy schedules. Below is an overview of the course's schedule and time
+        commitment.</p>
+
+      <h4>Duration Overview</h4>
+      <p>The course lasts for <strong>12 weeks</strong> (3 months). Each week, students will dedicate approximately
+        <strong>6-8 hours</strong> to the course, which includes time for attending live sessions, completing
+        assignments, engaging with course materials, and participating in hands-on labs and group discussions.</p>
+
+      <h4>Weekly Breakdown</h4>
+      <ul>
+        <li><strong>Live Sessions:</strong> 2 hours per week (Every Wednesday at 7:00 PM - 9:00 PM GMT)</li>
+        <li><strong>Self-paced Learning:</strong> 4-6 hours per week (Access to pre-recorded videos, readings, and
+          quizzes)</li>
+        <li><strong>Lab Sessions:</strong> 1-2 hours per week (Hands-on practical exercises using real-world scenarios)
+        </li>
+        <li><strong>Assignments:</strong> Weekly assignments and quizzes (30 minutes to 1 hour per assignment)</li>
+        <li><strong>Discussion Forum:</strong> Active participation in the online discussion forum (30 minutes to 1 hour
+          per week)</li>
+      </ul>
+
+      <h4>Course Structure</h4>
+      <p>The course is divided into <strong>3 main phases</strong>, each designed to focus on different aspects of Cyber
+        Security:</p>
+
+      <ul>
+        <li><strong>Phase 1: Introduction to Cyber Security (Weeks 1–4)</strong>
+          <ul>
+            <li>Foundational knowledge in Cyber Security</li>
+            <li>Understanding security principles and frameworks</li>
+            <li>Introduction to network security and ethical hacking</li>
+          </ul>
+        </li>
+        <li><strong>Phase 2: Advanced Cyber Security Techniques (Weeks 5–8)</strong>
+          <ul>
+            <li>Deep dive into penetration testing and vulnerability assessment</li>
+            <li>Learning about cryptography and data protection techniques</li>
+            <li>Real-world applications of security protocols and firewalls</li>
+          </ul>
+        </li>
+        <li><strong>Phase 3: Capstone Project & Exam Preparation (Weeks 9–12)</strong>
+          <ul>
+            <li>Practical penetration testing and live lab exercises</li>
+            <li>Preparing for the final exam and certifications</li>
+            <li>Final project: Conducting a full security audit and penetration test for a simulated company</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>Flexible Learning Options</h4>
+      <p>We understand that students come from various backgrounds and may have different schedules, so the course
+        offers a blend of synchronous and asynchronous learning. This allows for flexibility in learning while still
+        maintaining the integrity and rigor of the course.</p>
+
+      <ul>
+        <li><strong>Synchronous Learning:</strong> Live sessions will be held weekly, allowing students to interact with
+          the instructor in real-time, ask questions, and engage in discussions with peers.</li>
+        <li><strong>Asynchronous Learning:</strong> Students can access all recorded sessions, study materials, quizzes,
+          and assignments at their own pace. This flexibility allows students to learn when it fits into their schedule.
+        </li>
+        <li><strong>Weekend Bootcamps:</strong> Additional bootcamps are available on weekends for students who prefer
+          more intensive study sessions and hands-on practice. These are optional and can be attended as extra practice.
+        </li>
+      </ul>
+
+      <h4>Time Commitment</h4>
+      <p>To succeed in the course, students are expected to commit to the following:</p>
+
+      <ul>
+        <li><strong>6–8 hours per week</strong> for self-paced learning, including watching videos, completing
+          assignments, and reading course materials.</li>
+        <li><strong>2 hours per week</strong> for the live session, where you can engage with the instructor and your
+          fellow students in real-time.</li>
+        <li><strong>1–2 hours per week</strong> for lab sessions where you’ll apply what you've learned in practical,
+          hands-on scenarios.</li>
+      </ul>
+
+      <h4>Final Exam & Certification</h4>
+      <p>The final exam will be held in the last week of the course (Week 12). It will test your understanding of key
+        concepts covered throughout the course. Students who successfully complete the exam and the capstone project
+        will receive a certification of completion in Cyber Security, which can be shared with employers or added to
+        your professional portfolio.</p>
+
+      <h4>Course Timelines at a Glance:</h4>
+      <ul>
+        <li><strong>Course Start Date:</strong> [Insert Start Date]</li>
+        <li><strong>Course End Date:</strong> [Insert End Date]</li>
+        <li><strong>Live Session Days:</strong> Every Wednesday, 7:00 PM - 9:00 PM GMT</li>
+        <li><strong>Capstone Project Deadline:</strong> Week 12</li>
+        <li><strong>Final Exam:</strong> Week 12 (TBA)</li>
+      </ul>
+
+      <h4>Next Steps</h4>
+      <p>If you are ready to start your Cyber Security journey, make sure to enroll in the course today! Get ready for
+        an exciting and engaging learning experience, where you will gain the skills to protect organizations from the
+        latest cyber threats and attacks.</p>
+    </div>
+    <div id="O4" class="tabcontent">
+      <h1>Meet the Instructor</h1>
+  
+      <div class="instructor-profile">
+        <img src="/Image/" alt="Instructor Image" class="instructor-image">
+        <div class="instructor-details">
+          <h3>Dr. Jane Smith, PhD</h3>
+          <p><strong>Lead Cyber Security Instructor</strong></p>
+  
+          <h4>Professional Profile</h4>
+          <p>Dr. Jane Smith is a seasoned Cyber Security professional with over 15 years of experience in the field of
+            information security, ethical hacking, and IT risk management. She holds a PhD in Cyber Security from Stanford
+            University and has a strong background in both academic and practical aspects of security. Dr. Smith has
+            worked with numerous Fortune 500 companies to design and implement comprehensive security solutions and has
+            led multiple penetration testing teams in high-profile security assessments.</p>
+  
+          <h4>Qualifications</h4>
+          <ul>
+            <li>PhD in Cyber Security from Stanford University</li>
+            <li>Certified Information Systems Security Professional (CISSP)</li>
+            <li>Certified Ethical Hacker (CEH)</li>
+            <li>Certified Cloud Security Professional (CCSP)</li>
+            <li>CompTIA Security+ Certified</li>
+            <li>Certified Information Security Manager (CISM)</li>
+            <li>Certified Penetration Testing Engineer (CPTE)</li>
+            <li>Master’s Degree in Computer Science with a Specialization in Security</li>
+          </ul>
+  
+          <h4>Experience</h4>
+          <ul>
+            <li><strong>Lead Cyber Security Consultant, ABC Corp</strong> (2015–Present): Leading the design and
+              implementation of security frameworks for major enterprises, and guiding them through vulnerability
+              assessments, penetration testing, and compliance audits.</li>
+            <li><strong>Senior Security Engineer, XYZ Solutions</strong> (2010–2015): Focused on building and maintaining
+              secure networks, developing security policies, and providing training for IT teams on threat detection and
+              mitigation.</li>
+            <li><strong>Cyber Security Researcher, DEF Labs</strong> (2008–2010): Conducted cutting-edge research in cyber
+              threat intelligence and contributed to the development of advanced security protocols and encryption
+              technologies.</li>
+            <li><strong>Instructor & Course Developer, Various Universities</strong> (2005–Present): Designing and
+              delivering high-level cyber security courses for graduate students and professionals, including the creation
+              of educational materials and training modules.</li>
+          </ul>
+  
+          <h4>Publications & Contributions</h4>
+          <ul>
+            <li><strong>Book: “Advanced Network Security”</strong> – A widely-regarded textbook used in universities
+              worldwide to teach network defense strategies.</li>
+            <li><strong>Research Papers</strong> – Dr. Smith has published several papers in top-tier journals, covering
+              topics such as blockchain security, the future of encryption algorithms, and cyber defense strategies
+              against APTs (Advanced Persistent Threats).</li>
+            <li><strong>Conference Speaker</strong> – Dr. Smith regularly speaks at industry-leading events like Black
+              Hat, RSA Conference, and DEF CON, sharing her expertise on ethical hacking, network security, and emerging
+              cyber threats.</li>
+          </ul>
+  
+          <h4>Teaching Philosophy</h4>
+          <p>Dr. Smith is committed to providing a hands-on learning experience, where students can apply theoretical
+            knowledge to real-world scenarios. She believes in fostering critical thinking, problem-solving skills, and
+            the development of a strong ethical framework for approaching cyber security challenges. Her courses are
+            designed to make students not only knowledgeable but also confident in applying security practices across
+            various industries.</p>
+  
+          <h4>What Students Say</h4>
+          <blockquote>
+            <p>"Dr. Smith’s course is engaging and comprehensive. She explained complex topics in a way that made them
+              easy to understand, and the hands-on labs were incredibly helpful for solidifying the concepts!"</p>
+            <footer>— Michael J., Cyber Security Student</footer>
+          </blockquote>
+          <blockquote>
+            <p>"Dr. Smith has a deep understanding of cyber security and is always ready to answer questions. Her
+              real-world examples were incredibly valuable in bridging the gap between theory and practice."</p>
+            <footer>— Sarah T., Penetration Tester</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div id="O5" class="tabcontent">
+      <h1>Course Fee</h1>
+  
+      <p>The Cyber Security course is designed to provide students with high-quality education and practical experience in the field of cyber security. The course fee reflects the comprehensive curriculum, access to expert instructors, hands-on labs, and the support provided throughout the course. Below is a breakdown of the fee structure, payment plans, and additional information.</p>
+  
+      <h4>Course Fee Overview</h4>
+      <p>The full cost of the Cyber Security course is <strong>$1,200 USD</strong>. This fee includes everything you need to successfully complete the course and gain a professional understanding of cyber security. The following items are included in the course fee:</p>
+      
+      <ul>
+          <li><strong>Access to all course materials:</strong> Recorded lectures, reading materials, practice quizzes, and weekly assignments.</li>
+          <li><strong>Live sessions:</strong> Weekly live instructor-led classes for direct interaction, Q&A, and real-time support.</li>
+          <li><strong>Hands-on labs:</strong> Practical experience through labs and simulations, including real-world scenarios and penetration testing exercises.</li>
+          <li><strong>Capstone project:</strong> Final project that allows students to apply the skills learned throughout the course in a real-world context.</li>
+          <li><strong>Final exam:</strong> Access to a comprehensive final exam to test your knowledge and understanding of the course material.</li>
+          <li><strong>Certification:</strong> A digital certificate upon successful completion of the course and final exam. This certificate can be shared with potential employers or added to your professional portfolio.</li>
+          <li><strong>Access to discussion forums:</strong> Engage with peers and instructors in the online community for ongoing support and collaboration.</li>
+      </ul>
+  
+      <h4>Payment Options</h4>
+      <p>We offer a variety of payment options to ensure the course is accessible to all learners:</p>
+  
+      <ul>
+          <li><strong>Full Payment Option:</strong> Pay the full course fee of $1,200 USD upfront. This option is ideal for students who prefer to pay once and avoid any recurring payments.</li>
+          <li><strong>Installment Payment Plan:</strong> Spread the cost over 3 months with monthly payments of $400 USD. The first payment is due upon enrollment, with subsequent payments due each month until the course is fully paid off.</li>
+          <li><strong>Early Bird Discount:</strong> Enroll before [Insert Early Bird Deadline Date] and save 10% on the total course fee. This means the course will cost only $1,080 USD if you sign up early.</li>
+          <li><strong>Group Discount:</strong> If you are enrolling with a group (3 or more students), you will receive a 15% discount on the total course fee. The discounted price for each student is $1,020 USD.</li>
+          <li><strong>Corporate/Employer Sponsorship:</strong> If your employer is sponsoring your education, we can arrange for direct invoicing and payment. Contact us to get more information on corporate pricing and bulk enrollment discounts.</li>
+      </ul>
+  
+      <h4>What’s Not Included in the Fee?</h4>
+      <p>While the course fee covers all core learning materials and access to live sessions, there are a few additional optional costs to be aware of:</p>
+  
+      <ul>
+          <li><strong>Optional Textbooks:</strong> Although most materials are provided online, students may wish to purchase additional textbooks or reference materials. These are not included in the course fee and are optional.</li>
+          <li><strong>External Certifications:</strong> If you decide to pursue additional certifications (such as CompTIA Security+, CISSP, etc.) after completing the course, there may be additional exam fees charged by certifying bodies.</li>
+          <li><strong>Hardware/Software:</strong> All students will need a laptop or desktop computer with internet access and the ability to run virtual machines for lab work. Specific software or hardware requirements will be communicated to you upon enrollment, and while most of the software is free or open-source, students may incur small additional costs for certain tools or platforms.</li>
+      </ul>
+  
+      <h4>Refund Policy</h4>
+      <p>We understand that life can be unpredictable, so we offer a flexible refund policy to ensure you can enroll in the course with confidence:</p>
+  
+      <ul>
+          <li><strong>Full Refund:</strong> If you decide to withdraw from the course within the first 7 days after enrollment, you will receive a full refund of your course fee.</li>
+          <li><strong>Partial Refund:</strong> If you withdraw after 7 days but before the start of Week 3, you will receive a 50% refund of your total course fee.</li>
+          <li><strong>No Refund:</strong> After Week 3, the course fee becomes non-refundable, as you will have accessed a significant portion of the course materials and live sessions.</li>
+      </ul>
+  
+      <h4>Scholarships & Financial Aid</h4>
+      <p>We believe that financial barriers should not prevent students from pursuing their education in Cyber Security. As such, we offer limited scholarships and financial aid options to students who demonstrate financial need. To apply for a scholarship, please contact our support team at [Insert Email Address] to learn about the application process and availability.</p>
+  
+      <h4>Next Steps</h4>
+      <p>If you're ready to start your journey in Cyber Security, you can enroll today and select your preferred payment option. Our team is here to assist you with any questions about payment or enrollment. Join our course and gain the skills you need to succeed in the fast-growing field of Cyber Security!</p>
+  </div>
+  
+
+  </div>
+  </div>
+
+
+
+  </div>
+
+
+
+  <!-- Footer Q:-->
+  <div id="footer-container"></div>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    });
+    // take body to change the content
+
+  </script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "1bPxZP2aZKuEWkCX622hC"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+  </script>
+  <script>
+
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu1');
+
+    // Add an event listener to toggle the menu visibility when the button is clicked
+    menuButton.addEventListener('click', function () {
+      // Toggle the 'display' property of the menu
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        menuButton.classList.remove('menu-btn')
+      } else {
+        menu.style.display = 'block'
+        menuButton.classList.add('menu-btn')
+      }
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets/lib/wow/wow.min.js"></script>
+  <script src="Assets/lib/easing/easing.min.js"></script>
+  <script src="Assets/lib/waypoints/waypoints.min.js"></script>
+  <script src="Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+  <!-- Template Javascript -->
+  <script src="Assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>

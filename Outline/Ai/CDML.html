@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="Assets/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="Assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="Assets/style-team.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="../../Assets/style.css" rel="stylesheet">
+  <link href="../../Assets/style-team.css" rel="stylesheet">
+
+  <style>
+    /* Custom Styles for the intro section */
+    .intro-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Fixed size for the image */
+    .intro-image {
+      width: 400px;
+      /* Set the fixed width */
+      height: 400px;
+      /* Set the fixed height */
+      object-fit: cover;
+      /* Ensures the image covers the area without distortion */
+      border-radius: 10px;
+    }
+
+    .intro-text {
+      max-width: 50%;
+      padding: 20px;
+    }
+
+    .intro-text h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .intro-text p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 1318px) {
+      .intro-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro-text {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .intro-image {
+        margin-bottom: 20px;
+        width: 250px;
+        /* Adjust image size on mobile */
+        height: 250px;
+        /* Adjust height for mobile */
+      }
+    }
+  </style>
+  <style>
+    .head h1 {
+      margin-bottom: 40px;
+      font-size: 60px;
+      font-weight: 800;
+      color: #002E5B;
+    }
+
+    label {
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .btn-send {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      width: 80%;
+      margin-left: 3px;
+    }
+
+    .help-block.with-errors {
+      color: #ff5050;
+      margin-top: 5px;
+
+    }
+
+    .card {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+  <style>
+    body {
+      text-wrap: none;
+      font-family: "Lato", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .table th {
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Table body styling */
+    .table td {
+      text-align: center;
+      vertical-align: middle;
+      font-size: 16px;
+    }
+
+    .cont {
+      padding: 50px 0 50px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Style the tab */
+    .tab {
+      border: 1px solid #ddd;
+      background-color: #fff;
+      width: 20%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tablinks {
+      display: block;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 18px;
+      margin: 10px 0;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: background-color 0.3s;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .tablink {
+      display: block;
+      background-color: rgb(25, 117, 209);
+      color: #ffffff;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      outline: none;
+      margin: 30px 10px 10px 10px;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .tablinks:active {
+      z-index: 688;
+    }
+
+    .tablink1 {
+      display: block;
+      background-color: rgb(25, 117, 209);
+      color: #ffffff;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      outline: none;
+      margin: 0px 10px 10px 10px;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Change background color of buttons on hover */
+    .tablinks:hover {
+      background-color: #1e7bd9;
+      color: #ffffff;
+    }
+
+    /* Create an active/current "tabl.tablinks" class */
+    .tablinks.active {
+      background-color: rgb(58, 140, 222);
+      color: white;
+    }
+
+    .tablinks i {
+      margin-left: 10px;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      background-color: #fff;
+      width: 65%;
+      padding: 30px;
+      border-left: 1px solid #ddd;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion {
+      background-color: #f8f9fa;
+      color: #333;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      margin: 5px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .accordion.active,
+    .accordion:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .panel {
+      display: none;
+      padding: 0 18px;
+      background-color: white;
+      overflow: hidden;
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+    }
+
+    h1 {
+      color: #002E5B;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .head h1 {
+      margin-bottom: 40px;
+      font-size: 60px;
+      font-weight: 800;
+      color: #002E5B;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @media screen and (min-width: 690px) {
+
+      .bloc {
+        display: none;
+      }
+
+    }
+
+    @media screen and (max-width: 690px) {
+
+      .tablink,
+      .tablink1 {
+        display: none;
+      }
+
+    }
+
+    .m-btn {
+      display: flex;
+      gap: 20PX;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(247, 249, 250);
+    }
+
+    .m-btn:hover {
+      background-color: rgb(247, 249, 250);
+    }
+
+    .plink {
+      display: block;
+      background-color: rgb(25, 117, 209);
+      color: #ffffff;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      margin: 20px;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div class="header-ul">
+    <nav class="container-fluid">
+      <div class=" text-center ">
+        <img id="logo" class="logo col-md-12 " src="../../Image/Cyber Legends.png" alt="Cyber Legends Logo" />
+      </div>
+      <div class=" d-flex justify-content-center">
+        <ul id="menu" class="list-unstyled">
+          <li class="slow-underline mt-2 py-3"><a href="../../index.html">HOME</a></li>
+          <li class="slow-underline mt-2 py-3 text-nowrap"><a href="">ABOUT US</a>
+            <span class="elementskit-submenu-indicator"></span>
+            <ul class="submenu">
+              <li><a href="../../events.html">Events</a></li>
+              <li><a href="../../team.html">Our Team</a></li>
+              <li><a href="../../portfolio.html">Portfolio</a></li>
+              <li><a href="../../contactUs.html">Contact us</a></li>
+              <li><a href="../../blog.html">Blog</a></li>
+              <li><a href="../../gallery.html">Gallery</a></li>
+              <li><a href="../../faQ.html">FAQs</a></li>
+              <li><a href="../../terms&conditions.html">Terms & Conditions</a></li>
+              <li><a href="../../privacy&policy.html">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li class="slow-underline mt-2 py-3"><a href="../..//services.html">SERVICES</a></li>
+          <li class="slow-underline mt-2 py-3 text-nowrap"><a href="../../">SOLUTIONS</a>
+            <span class="elementskit-submenu-indicator"></span>
+            <ul class="submenu">
+              <li><a href="../../cyber-solution.html">Cyber Security</a></li>
+              <li><a href="../../AI&DS-solutions.html">AI & Data Science</a></li>
+              <li><a href="../../marketing-solutions.html">Marketing</a></li>
+              <li><a href="../../digital-forensice-solutions.html">Digital Forensics</a></li>
+              <li><a href="../../penetration-solutions.html">Penetration Testing</a></li>
+              <li><a href="../../business&accounts-solutions.html">Business & Accounts</a></li>
+              <li><a href="../../web-solutions.html">Web Development</a></li>
+              <li><a href="../../ecommerce-solutions.html">Ecommerce</a></li>
+            </ul>
+          </li>
+          <li class="slow-underline mt-2 py-3 text-nowrap">
+            <a href="../../">TRAININGS</a>
+            <span class="elementskit-submenu-indicator"></span>
+            <ul class="submenu">
+              <li><a href="../../cyber-security.html">Cyber Security</a></li>
+              <li><a href="../../AI.html">AI & Data Science</a></li>
+              <li><a href="../../development.html">Development</a></li>
+              <li><a href="../../digital-forensics.html">Digital Forensics</a></li>
+              <li><a href="../../penetration-testing.html">Penetration Testing</a></li>
+              <li><a href="../../blockchain.html">BlockChain</a></li>
+              <li><a href="../../art-designing.html">Art & Design</a></li>
+              <li><a href="../../marketing.html">Marketing</a></li>
+              <li><a href="../../business-accounts.html">Business & Accounts</a></li>
+            </ul>
+          </li>
+          <li class="slow-underline mt-2 py-3"><a href="../../career.html">Blog</a></li>
+          <li class="slow-underline mt-2 py-3 text-nowrap"><a href="../../career.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex">
+        <div class=" d-flex nav-btn">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button
+              class="btn contact-us e-btn  "><span>Enroll Now</span></button></a>
+          <a href="../../"><button class="btn d-btn contact-us "><span>Book for Demo</span></button> </a>
+        </div>
+        <div class="nav1">
+          <button id="menuButton" class="menu-button"> ☰ Menu</button>
+
+          <!-- Menu Container -->
+          <div id="menu1" class="menu1">
+            <ul>
+              <li class="slow-underline"><a href="../../index.html">HOME</a></li>
+              <li class="slow-underline text-nowrap"><a href="../../">ABOUT US</a>
+                <span class="elementskit-submenu-indicator"></span>
+                <ul class="submenu">
+                  <li><a href="../../events.html">Events</a></li>
+                  <li><a href="../../team.html">Our Team</a></li>
+                  <li><a href="../../portfolio.html">Portfolio</a></li>
+                  <li><a href="../../contactUs.html">Contact us</a></li>
+                  <li><a href="../../blog.html">Blog</a></li>
+                  <li><a href="../../gallery.html">Gallery</a></li>
+                  <li><a href="../../faQ.html">FAQs</a></li>
+                  <li><a href="../../terms&conditions.html">Terms & Conditions</a></li>
+                  <li><a href="../../privacy&policy.html">Privacy Policy</a></li>
+                </ul>
+              </li>
+              <li class="slow-underline"><a href="../../services.html">SERVICES</a></li>
+              <li class="slow-underline text-nowrap"><a href="../../">SOLUTIONS</a>
+                <span class="elementskit-submenu-indicator"></span>
+                <ul class="submenu">
+                  <li><a href="../../cyber-solution.html">Cyber Security</a></li>
+                  <li><a href="../../AI&DS-solutions.html">AI & Data Science</a></li>
+                  <li><a href="../../marketing-solutions.html">Marketing</a></li>
+                  <li><a href="../../digital-forensice-solutions.html">Digital Forensics</a></li>
+                  <li><a href="../../penetration-solutions.html">Penetration Testing</a></li>
+                  <li><a href="../../business&accounts-solutions.html">Business & Accounts</a></li>
+                  <li><a href="../../web-solutions.html">Web Development</a></li>
+                  <li><a href="../../ecommerce-solutions.html">Ecommerce</a></li>
+                </ul>
+              </li>
+              <li class="slow-underline text-nowrap">
+                <a href="../../">TRAININGS</a>
+                <span class="elementskit-submenu-indicator"></span>
+                <ul class="submenu">
+                  <li><a href="../../cyber-security.html">Cyber Security</a></li>
+                  <li><a href="../../AI.html">AI & Data Science</a></li>
+                  <li><a href="../../development.html">Development</a></li>
+                  <li><a href="../../digital-forensics.html">Digital Forensics</a></li>
+                  <li><a href="../../penetration-testing.html">Penetration Testing</a></li>
+                  <li><a href="../../blockchain.html">BlockChain</a></li>
+                  <li><a href="../../art-designing.html">Art & Design</a></li>
+                  <li><a href="../../marketing.html">Marketing</a></li>
+                  <li><a href="../../business-accounts.html">Business & Accounts</a></li>
+                </ul>
+              </li>
+              <li class="slow-underline"><a href="../../career.html">Blog</a></li>
+              <li class="slow-underline text-nowrap"><a href="../../career.html">Contact Us</a></li>
+            </ul>
+            <div class=" d-flex flex-column nav-btn1">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"
+                class="btn contact-us m-btn"><span>Enroll Now</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+
+
+
+  <div class=" head text-center mt-5 ">
+
+    <h1>PROGRAM INFO</h1>
+
+
+  </div>
+
+
+
+  <div class="cont">
+
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'O1')" id="defaultOpen">Course Detail</button>
+      <button class="tablinks" onclick="openCity(event, 'O2')">Duration & Fee</button>
+      <button class="tablinks" onclick="openCity(event, 'O3')">Custom Services</button>
+      <button class="tablinks" onclick="openCity(event, 'O4')"> Course Instructure</button>
+      <a href=""><button class="tablink text-center"> Course Outline</button></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button
+          class="tablink1 text-center"> Get Admission</button></a>
+    </div>
+    <div id="O1" class="tabcontent">
+
+      <h1> <strong>CL-Certified Deep & Machine Learning</strong></h1>
+      <p>
+        CL-Certified Deep and Machine Learning programs focus on providing individuals with a comprehensive
+        understanding of advanced AI techniques, such as deep learning and machine learning, through certified training.
+        These programs are designed to equip learners with the skills to build and deploy AI models, using algorithms
+        and neural networks to solve complex problems. CL certification ensures that the training meets high industry
+        standards, validating the skills gained and providing learners with credible, recognized credentials in the
+        field.
+      </p>
+      <h1>Importance of <strong>CDML</strong></h1>
+      <p>
+        The importance of CL-Certified Deep and Machine Learning training lies in its ability to prepare professionals
+        for high-demand roles in AI development. Certified expertise in these areas opens up opportunities in fields
+        like data science, robotics, healthcare, and finance. By offering standardized, quality training, these programs
+        ensure that individuals can effectively implement deep learning and machine learning techniques, contributing to
+        innovative solutions and advancements in technology. Certification also enhances career prospects by
+        demonstrating a commitment to mastering cutting-edge AI technologies.
+
+
+
+
+      </p>
+    </div>
+
+    <div id="O2" class="tabcontent">
+      <h1>Course Duration</h1>
+      <div class="container mt-5">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Duration</th>
+              <th>Course Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>3-Month</td>
+              <td>Rs:25,000</td>
+
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+
+              <td>6-Month</td>
+              <td>Rs:125,000</td>
+
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+
+              <td>1-Year</td>
+              <td>Rs:225,000</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+    </div>
+    <div id="O3" class="tabcontent">
+
+      <div class="container">
+        <form id="contact-form" role="form">
+
+
+
+          <div class="controls">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">Firstname</label>
+                  <input id="form_name" type="text" name="name" class="form-control"
+                    placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">Email</label>
+                  <input id="form_name" type="email" name="email" class="form-control"
+                    placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Contact Number</label>
+                  <input id="form_email" type="email" name="email" class="form-control"
+                    placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_need">Courses</label>
+                  <select id="form_need" name="need" class="form-control" required="required"
+                    data-error="Please specify your need.">
+                    <option value="" selected disabled>--Chose your course--
+                    <option>Cyber Security</option>
+                    <option>AI & Data Science</option>
+                    <option>Marketing</option>
+                    <option>Digital Forensics</option>
+                    <option>Penetration Testing</option>
+                    <option>Business & Accounts</option>
+                    <option>Web Development</option>
+                    <option>Ecommerce</option>
+                    <option>Other</option>
+
+                  </select>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <div class="form-group">
+                  <label for="form_message">Message</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here."
+                    rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                </div>
+
+              </div>
+
+
+              <div class="col-md-12">
+
+                <input type="submit" class="btn btn-primary pt-2 " value="Send Message">
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+    <div id="O4" class="tabcontent">
+      <!-- Instructor Introduction Section -->
+      <section class="intro-section container">
+        <!-- Image on the left -->
+        <div class="intro-image-wrapper col-md-6">
+          <img src="../../image/Dr.Mohsin.jpg" alt="Instructor Image" class="intro-image">
+        </div>
+
+        <!-- Instructor Introduction Text on the right -->
+        <div class="intro-text col-md-6">
+          <h2>Meet Our Instructor: John Doe</h2>
+          <ul>
+            <li>Expert in AI and Machine Learning with over 10 years of industry experience.</li>
+            <li>Has worked with leading tech companies to develop AI-based solutions.</li>
+            <li>Passionate about teaching and mentoring aspiring data scientists.</li>
+            <li>Experienced in guiding students through hands-on projects and real-world scenarios.</li>
+            <li>Committed to helping students build practical skills in AI and machine learning.</li>
+            <li>Teaches both beginners and professionals with a focus on actionable knowledge.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+
+  </div>
+  </div>
+
+
+  </div>
+
+  <div class="bloc">
+    <div class="m-btn">
+      <a href=""><button class="plink text-center"> Course Outline</button></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4eXrr95Scgeg0ePDxsyPUSBPbxTFDBqtO9h2fOmE6dgv7nQ/viewform"><button
+          class="plink text-center"> Get Admission</button></a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Footer Q:-->
+  <div id="footer-container"></div>
+
+  <!-- Back to Top -->
+  <a href="../../#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('../../footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    });
+    // take body to change the content
+
+  </script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "1bPxZP2aZKuEWkCX622hC"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+  </script>
+  <script>
+
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu1');
+
+    // Add an event listener to toggle the menu visibility when the button is clicked
+    menuButton.addEventListener('click', function () {
+      // Toggle the 'display' property of the menu
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        menuButton.classList.remove('menu-btn')
+      } else {
+        menu.style.display = 'block'
+        menuButton.classList.add('menu-btn')
+      }
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets/lib/wow/wow.min.js"></script>
+  <script src="Assets/lib/easing/easing.min.js"></script>
+  <script src="Assets/lib/waypoints/waypoints.min.js"></script>
+  <script src="Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+  <!-- Template Javascript -->
+  <script src="../../Assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>
